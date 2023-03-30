@@ -1,5 +1,7 @@
 import { Routes,Route } from 'react-router-dom';
 import './App.css';
+import Books from "./components/Books"
+import Categories from "./components/Categories"
 
 function App() {
   return (
