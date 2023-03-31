@@ -15,10 +15,11 @@ const Books = () => (
       </div>
     </div>
     <div className="form">
+      <h1>ADD NEW BOOK</h1>
       <form>
-        <input />
-        <input />
-        <button type="submit" />
+        <input placeholder="Book name.." />
+        <input placeholder="Name of the author.." />
+        <button type="submit">Addbook</button>
       </form>
     </div>
   </div>
