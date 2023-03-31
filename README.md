@@ -15,7 +15,7 @@ The bookstore project is a project which allows the user to add, remove, and edi
 
 - [bookstore](#bookstore)
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 Awesome Books ](#-awesome-books-)
+- [📖 bookstore ](#-bookstore-)
   - [🛠 Built With ](#-built-with-)
     - [Git ](#git-)
     - [Vs code](#vs-code)
@@ -41,7 +41,7 @@ The bookstore project is a project which allows the user to add, remove, and edi
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Awesome Books <a name="about-project"></a>
+# 📖 bookstore <a name="about-project"></a>
 - This is the project of a website for adding, storing, deleting and editing books.
 
 - I built this project to improve my skills in web development.
@@ -85,7 +85,7 @@ The bookstore project is a project which allows the user to add, remove, and edi
 - ****
 - **Contacts**
   - ikootepreim@gmail.com
-  - LinkedIn https://www.linkedin.com/in/ikoote-rasuli-479545246/ 
+  - [LinkedIn](https://www.linkedin.com/in/ikoote-rasuli-479545246/) 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 ## Video Description of the project <a name="Video" href="#" > Video will be added soon </a>
@@ -109,17 +109,17 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
->To Clone this (https://github.com/ikoote1/bookstore.git) repository to your desired folder:
+>To Clone this [repository](https://github.com/ikoote1/bookstore.git) to your desired folder:
 
 ### Setup
 
->Clone this (https://github.com/ikoote1/bookstore.git) repository to your desired folder.
+>Clone this [repository](https://github.com/ikoote1/bookstore.git) to your desired folder.
 
 ### Install
 
 Install this project with:
 
--Link (href="https://ikoote1.github.io/bookstore/)
+-Link [repo](https://ikoote1.github.io/bookstore/)
 
 ### Usage
   
