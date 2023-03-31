@@ -20,7 +20,6 @@
     display: flex;
     flex-direction: row;
     padding-left: 50px;
-    background-color: red;
 }
 
 .navbar>h1{
@@ -28,6 +27,7 @@
     top: -10px;
     font-size: 45px;
     color: blue;
+    font-weight: 600;
 }
 
 .navbar>ul{
@@ -42,7 +42,3 @@
     font-size: 22px;
     font-weight: 600;
 }
-
-/* .navbar>ul>li:link{
-    text-decoration: none;
-} */
