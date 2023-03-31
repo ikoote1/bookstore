@@ -46,7 +46,7 @@
 
 /* books styling */
 .books{
-  width: 94%;
+  width: 92%;
   height: auto;
   position: relative;
   left: 3%;
@@ -75,13 +75,21 @@ form{
   height: auto;
   display: flex;
   flex-direction: row;
-  gap: 5%;
+  gap: 2%;
 }
 
 input{
   height: 40px;
-  width: 40%;
+  width: 42%;
   border-radius: 10px;
   border-color: white;
   padding-left: 8px;
+}
+
+form>button{
+  border-radius: 10px;
+  border-color: white;
+  width: 13%;
+  background-color: blue;
+  color: white;
 }
