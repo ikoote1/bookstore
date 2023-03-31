@@ -15,5 +15,34 @@
 }
 
 .navbar{
-    width
+    width: 50%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 50px;
+    background-color: red;
 }
+
+.navbar>h1{
+    position: relative;
+    top: -10px;
+    font-size: 45px;
+    color: blue;
+}
+
+.navbar>ul{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    list-style: none;
+    padding-top: 30px;
+}
+
+.navbar>ul>li{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* .navbar>ul>li:link{
+    text-decoration: none;
+} */

@@ -6,10 +6,10 @@ const Navigation = () => (
       <h1>Bookstore Ikoote</h1>
       <ul>
         <li>
-          <Link to="/">BOOKS</Link>
+          <Link style={{ textDecoration: 'none', color: 'black' }} to="/">BOOKS</Link>
         </li>
         <li>
-          <Link to="categories">CATEGORIES</Link>
+          <Link style={{ textDecoration: 'none', color: 'black' }} to="categories">CATEGORIES</Link>
         </li>
       </ul>
     </nav>
