@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
 
 const Navigation = () => (
-  <div>
-    <nav>
-      <h1>Bookstore IKOOTE</h1>
+  <div className="bar">
+    <nav className="navbar">
+      <h1>Bookstore Ikoote</h1>
       <ul>
         <li>
           <Link to="/">BOOKS</Link>
