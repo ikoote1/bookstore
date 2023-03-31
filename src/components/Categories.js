@@ -1,7 +1,5 @@
-const Categories = () => {
-    return(
-        <h1>ikoote</h1>
-    )
-}
+const Categories = () => (
+  <h1>ikoote</h1>
+);
 
-export default Categories
+export default Categories;

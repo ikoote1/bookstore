@@ -1,7 +1,5 @@
- const Books = () =>{
-    return(
-        <div><p>ikooterhehfhdhf</p></div>
-    )
- }
+const Books = () => (
+  <div><p>ikooterhehfhdhf</p></div>
+);
 
- export default Books
+export default Books;
