@@ -1,0 +1,128 @@
+.App {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: auto;
+  background-color: #8888;
+}
+
+.bar {
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  border-radius: 6px;
+  border: 1px solid white;
+  box-shadow: 5px 10px 18px 5px #888;
+}
+
+.navbar {
+  width: 50%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  padding-left: 50px;
+}
+
+.navbar > h1 {
+  position: relative;
+  top: -10px;
+  font-size: 45px;
+  color: blue;
+  font-weight: 600;
+}
+
+.navbar > ul {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  list-style: none;
+  padding-top: 30px;
+}
+
+.navbar > ul > li {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* books styling */
+.books {
+  width: 92%;
+  height: auto;
+  position: relative;
+  left: 3%;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.book {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 20px;
+  padding-top: 50px;
+  border-radius: 10px;
+  background-color: white;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 24%;
+}
+
+.book > div {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+form > button {
+  border-radius: 10px;
+  border-color: white;
+  width: 13%;
+  background-color: rgb(76, 76, 241);
+  color: white;
+}
+
+.book > button {
+  border-radius: 10px;
+  border-color: white;
+  width: 13%;
+  height: 40px;
+  background-color: rgb(76, 76, 241);
+  color: white;
+}
+
+.form {
+  width: 94%;
+  position: relative;
+  left: 3%;
+  margin-top: 50px;
+  padding-bottom: 100px;
+}
+
+form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+}
+
+input {
+  height: 40px;
+  width: 42%;
+  border-radius: 10px;
+  border-color: white;
+  padding-left: 8px;
+}
+
+/* categoriies */
+
+.check {
+  border-radius: 10px;
+  border-color: white;
+  width: 13%;
+  height: 40px;
+  background-color: rgb(76, 76, 241);
+  color: white;
+  margin: 50px 43%;
+}
