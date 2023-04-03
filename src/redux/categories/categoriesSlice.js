@@ -1,20 +1,20 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-    categories: [],
-    isloading: true,
-}
+  categories: [],
+  isloading: true,
+};
 
 const categoriesSlice = createSlice({
-    name: 'category',
-    initialState,
-    reducers: {
-        checkStatus:{
-            
-        },
-    }
-})
+  name: 'category',
+  initialState,
+  reducers: {
+    checkStatus: {
 
-export const {checkStatus} = categoriesSlice.actions;
+    },
+  },
+});
 
-export default categoriesSlice
+export const { checkStatus } = categoriesSlice.actions;
+
+export default categoriesSlice;
