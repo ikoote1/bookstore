@@ -9,15 +9,12 @@ const categoriesSlice = createSlice({
     name: 'category',
     initialState,
     reducers: {
-        addBook:{
-
+        checkStatus:{
+            
         },
-        removeBook:{
-
-        }
     }
 })
 
-export const {addBook, removeBook} = categoriesSlice.actions;
+export const {checkStatus} = categoriesSlice.actions;
 
 export default categoriesSlice
