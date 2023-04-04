@@ -4,7 +4,7 @@ const Categories = () => {
   // const dispatch = useDispatch();
   const { categories } = useSelector((state) => state.category);
 
-  if (categories.length < 1) {
+  if (categories < 1) {
     return (
       <div>
         <button type="button" className="check">Check Status</button>
@@ -15,7 +15,7 @@ const Categories = () => {
   return (
     <div>
       <button type="button" className="check">Check Status</button>
-      <div>Under construction</div>
+      <div>Under</div>
     </div>
   );
 };
