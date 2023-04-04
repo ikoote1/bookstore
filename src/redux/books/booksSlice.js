@@ -9,11 +9,12 @@ const booksSlice = createSlice({
   name: 'book',
   initialState,
   reducers: {
-    addBook: {
+    addBook:() => {
 
     },
-    removeBook: {
-
+    removeBook:(state, action) => {
+      const itemId = action.payload;
+      state.bookItems = state.bookItems.filter((item) => item.id !== itemId)
     },
   },
 });
