@@ -1,32 +1,30 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { addBook } from '../redux/books/booksSlice';
-import { removeBook } from '../redux/books/booksSlice';
-// import BookSet from './book';
+import { addBook, removeBook } from '../redux/books/booksSlice';
 
 const Books = () => {
   const dispatch = useDispatch();
   const { bookItems } = useSelector((state) => state.book);
-  // console.log(bookItems.title);
   return (
     <div>
       <div className="books">
         {bookItems.map(
-          (item) => {
-            return(
-              <div className="book" key={item.id}>
+          (item) => (
+            <div className="book" key={item.id}>
               <div>
                 <h2>{item.title}</h2>
                 <h2>
                   {' '}
                   by
+                  {' '}
+                </h2>
+                <h2>
                   {item.author}
                 </h2>
               </div>
               <button type="button" onClick={() => { dispatch(removeBook(item.id)); }}>Delete</button>
             </div>
-            )
-          }
+          ),
         )}
       </div>
       <div className="form">
