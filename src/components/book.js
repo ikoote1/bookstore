@@ -5,7 +5,7 @@ import { removeBook } from '../redux/books/booksSlice';
 const BookSet = (id, title, author) => {
   const dispatch = useDispatch();
   return (
-    <div className="book">
+    <div className="book" key={id}>
       <div>
         <h2>{title}</h2>
         <h2>

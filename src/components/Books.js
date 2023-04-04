@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addBook } from '../redux/books/booksSlice';
+import { removeBook } from '../redux/books/booksSlice';
 // import BookSet from './book';
 
 const Books = () => {
@@ -12,19 +13,19 @@ const Books = () => {
       <div className="books">
         {bookItems.map(
           (item) => {
-          return(
-            <div className="book">
-            <div>
-              <h2>{item.title}</h2>
-              <h2>
-                {' '}
-                by
-                {item.author}
-              </h2>
+            return(
+              <div className="book" key={item.id}>
+              <div>
+                <h2>{item.title}</h2>
+                <h2>
+                  {' '}
+                  by
+                  {item.author}
+                </h2>
+              </div>
+              <button type="button" onClick={() => { dispatch(removeBook(item.id)); }}>Delete</button>
             </div>
-            <button type="button" onClick={() => { dispatch(removeBook(id)); }}>Delete</button>
-          </div>
-          )
+            )
           }
         )}
       </div>
