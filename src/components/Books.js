@@ -6,10 +6,13 @@ import BookSet from './book';
 const Books = () => {
   const dispatch = useDispatch();
   const { bookItems } = useSelector((state) => state.book);
+  console.log(bookItems.title);
   return (
     <div>
       <div className="books">
-        {bookItems.map((item) => <BookSet key={item.id} {...item} />)}
+        {bookItems.map(
+          (item) => <BookSet key={item.id} title={item.title} author={item.title} />
+          )}
       </div>
       <div className="form">
         <h1>ADD NEW BOOK</h1>

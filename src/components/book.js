@@ -5,17 +5,17 @@ import { removeBook } from '../redux/books/booksSlice';
 const BookSet = (id, title, author) => {
   const dispatch = useDispatch();
   return (
-      <div className="book" id="1">
-        <div>
-          <h2>{title}</h2>
-          <h2>
-            {' '}
-            by
-            {author}
-          </h2>
-        </div>
-        <button type="button" onClick={() => { dispatch(removeBook(id)); }}>Delete</button>
+    <div className="book">
+      <div>
+        <h2>{title}</h2>
+        <h2>
+          {' '}
+          by
+          {author}
+        </h2>
       </div>
+      <button type="button" onClick={() => { dispatch(removeBook(id)); }}>Delete</button>
+    </div>
   );
 };
 
