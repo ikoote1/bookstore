@@ -19,3 +19,5 @@ const bookItems = [
       "category": "Nonfiction"
     }
   ]
+
+  export default bookItems

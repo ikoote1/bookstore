@@ -1,9 +1,11 @@
 import { createSlice } from '@reduxjs/toolkit';
+import{ bookItems } from '.../bookItems'
 
 const initialState = {
-  bookItems: [],
+  bookItems: bookItems,
   isLoading: true,
 };
+console.log(bookItems);
 
 const booksSlice = createSlice({
   name: 'book',
