@@ -1,11 +1,11 @@
 import React from "react";
-import { useState } from "react";
+// import { useState } from "react";
 import { addBook } from '../redux/books/booksSlice';
 const AddBook = () => {
-    const [inputData, SetInputData] = useState({
-        title: "",
-        author: ""
-      })
+    // const [inputData, SetInputData] = useState({
+    //     title: "",
+    //     author: ""
+    //   })
     return(
         <div className="form">
         <h1>ADD NEW BOOK</h1>
