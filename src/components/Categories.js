@@ -5,16 +5,16 @@ const Categories = () => {
 
   if (categories.length < 1) {
     return (
-      <div>
+      <div className="cat">
         <button type="button" className="check">Check Status</button>
-        <div>Under construction</div>
+        <div><h1>Under construction</h1></div>
       </div>
     );
   }
   return (
-    <div>
+    <div className="cat">
       <button type="button" className="check">Check Status</button>
-      <div>Under</div>
+      <div><h1>Under construction</h1></div>
     </div>
   );
 };
