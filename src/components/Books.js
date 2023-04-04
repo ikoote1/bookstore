@@ -1,18 +1,32 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addBook } from '../redux/books/booksSlice';
-import BookSet from './book';
+// import BookSet from './book';
 
 const Books = () => {
   const dispatch = useDispatch();
   const { bookItems } = useSelector((state) => state.book);
-  console.log(bookItems.title);
+  // console.log(bookItems.title);
   return (
     <div>
       <div className="books">
         {bookItems.map(
-          (item) => <BookSet key={item.id} title={item.title} author={item.title} />
-          )}
+          (item) => {
+          return(
+            <div className="book">
+            <div>
+              <h2>{item.title}</h2>
+              <h2>
+                {' '}
+                by
+                {item.author}
+              </h2>
+            </div>
+            <button type="button" onClick={() => { dispatch(removeBook(id)); }}>Delete</button>
+          </div>
+          )
+          }
+        )}
       </div>
       <div className="form">
         <h1>ADD NEW BOOK</h1>
