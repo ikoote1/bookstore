@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { addBook, removeBook } from '../redux/books/booksSlice';
+import { removeBook } from '../redux/books/booksSlice';
 
 const Books = () => {
   const dispatch = useDispatch();
@@ -27,14 +27,7 @@ const Books = () => {
           ),
         )}
       </div>
-      <div className="form">
-        <h1>ADD NEW BOOK</h1>
-        <form>
-          <input placeholder="Book name.." />
-          <input placeholder="Name of the author.." />
-          <button type="submit" onClick={() => { dispatch(addBook()); }}>Addbook</button>
-        </form>
-      </div>
+      
     </div>
   );
 };
