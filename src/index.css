@@ -46,9 +46,8 @@
 
 /* books styling */
 
-.chart{
+.chart {
   width: 92%;
-  height: auto;
   position: relative;
   left: 3%;
   border-radius: 10px;
@@ -127,7 +126,7 @@ input {
   outline: none;
 }
 
-input:focus-within{
+input:focus-within {
   border: 2px solid blue;
 }
 
