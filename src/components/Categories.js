@@ -1,10 +1,9 @@
 import { useSelector } from 'react-redux';
-// import { checkStatus } from "../redux/categories/categoriesSlice";
+
 const Categories = () => {
-  // const dispatch = useDispatch();
   const { categories } = useSelector((state) => state.category);
 
-  if (categories < 1) {
+  if (categories.length < 1) {
     return (
       <div>
         <button type="button" className="check">Check Status</button>
