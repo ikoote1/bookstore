@@ -1,13 +1,16 @@
 import React from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { addBook } from '../redux/books/booksSlice';
 import BookSet from './book';
 
 const Books = () => {
   const dispatch = useDispatch();
+  const { bookItems } = useSelector((state) => state.book);
   return (
     <div>
-      <BookSet />
+      <div className="books">
+        {bookItems.map((item) => <BookSet key={item.id} {...item} />)}
+      </div>
       <div className="form">
         <h1>ADD NEW BOOK</h1>
         <form>
