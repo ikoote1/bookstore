@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { removeBook } from '../redux/books/booksSlice';
+import AddBook from './AddBook';
 
 const Books = () => {
   const dispatch = useDispatch();
@@ -27,7 +28,7 @@ const Books = () => {
           ),
         )}
       </div>
-      
+      <AddBook />
     </div>
   );
 };
