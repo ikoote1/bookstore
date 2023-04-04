@@ -45,6 +45,17 @@
 }
 
 /* books styling */
+
+.chart{
+  width: 92%;
+  height: auto;
+  position: relative;
+  left: 3%;
+  border-radius: 10px;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+}
+
 .books {
   width: 92%;
   height: auto;
@@ -113,6 +124,11 @@ input {
   border-radius: 10px;
   border-color: white;
   padding-left: 8px;
+  outline: none;
+}
+
+input:focus-within{
+  border: 2px solid blue;
 }
 
 /* categoriies */
