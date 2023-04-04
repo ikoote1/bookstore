@@ -1,13 +1,13 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { addBook } from '../redux/books/booksSlice';
-import bookSet from './book';
+import BookSet from './book';
 
 const Books = () => {
   const dispatch = useDispatch();
   return (
     <div>
-      <<div><bookSet /></div>
+      <BookSet />
       <div className="form">
         <h1>ADD NEW BOOK</h1>
         <form>
