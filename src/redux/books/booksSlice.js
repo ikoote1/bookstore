@@ -5,7 +5,6 @@ const initialState = {
   bookItems,
   isLoading: true,
 };
-// console.log(bookItems);
 
 const booksSlice = createSlice({
   name: 'book',
