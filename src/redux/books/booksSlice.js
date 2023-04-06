@@ -1,10 +1,17 @@
-import { createSlice } from '@reduxjs/toolkit';
-import bookItems from '../bookItems';
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+// import bookItems from '../bookItems';
+
+const url = '';
 
 const initialState = {
-  bookItems,
+  bookItems: [],
   isLoading: true,
 };
+
+export const getBooks = createAsyncThunk('book/getBooka',
+() => {
+  ret
+})
 
 const booksSlice = createSlice({
   name: 'book',
@@ -20,6 +27,20 @@ const booksSlice = createSlice({
       return { ...state, bookItems: filteredBookItems };
     },
   },
+  extraReducers: (builder) => {
+    builder
+      .addCase(getBooks.pending, (state) => {
+        state.isLoading = true;
+      })
+      .addCase(getBooks.fulfilled, (state, action) => {
+        state.isLoading = false;
+        state.bookItems = action.payload.results;
+      })
+      .addCase(getBooks.rejected, (state) => {
+        state.isLoading = false;
+        state.error = 'State Error'
+      })
+  }
 });
 
 export const { addBook, removeBook } = booksSlice.actions;
