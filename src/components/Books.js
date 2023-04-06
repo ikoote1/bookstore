@@ -11,7 +11,7 @@ const Books = () => {
     dispatch(getBooks());
   }, []);
 
-  if (isLoading) {
+  if (isLoading || !bookItems) {
     return (
       <div><h1>Loading..........</h1></div>
     );
@@ -21,20 +21,20 @@ const Books = () => {
       <div>
         <div className="books">
           {bookItems.map(
-            (item) => (
-              <div className="book" key={item.id}>
+            (book) => (
+              <div className="book" key={book.item_id}>
                 <div>
-                  <h2>{item.title}</h2>
+                  <h2>{book.title}</h2>
                   <h2>
                     {' '}
                     by
                     {' '}
                   </h2>
                   <h2>
-                    {item.author}
+                    {book.author}
                   </h2>
                 </div>
-                <button type="button" onClick={() => { dispatch(removeBook(item.id)); }}>Delete</button>
+                <button type="button" onClick={() => { dispatch(removeBook(book.item_id)); }}>Delete</button>
               </div>
             ),
           )}

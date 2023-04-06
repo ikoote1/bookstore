@@ -2,21 +2,21 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
 const BOOKSTOREID = 'U4HmerEPXvxyMCBtJZNQ';
-const url = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/books';
+const url = `https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/${BOOKSTOREID}/books`;
 
 const initialState = {
   bookItems: [],
   isLoading: true,
 };
 
-export const getBooks = createAsyncThunk('book/getBooka',
+export const getBooks = createAsyncThunk('book/getBooks',
   async () => {
     try {
-      const resp = await axios(url);
+      const resp = await axios.get(url);
+      // console.log(resp.data);
       return resp.data;
     } catch (error) {
-      console.error(error);
-      return null;
+      return error;
     }
   });
 
@@ -40,11 +40,21 @@ const booksSlice = createSlice({
         ...state,
         isLoading: true,
       }))
-      .addCase(getBooks.fulfilled, (state, action) => ({
-        ...state,
-        isLoading: false,
-        bookItems: action.payload.results,
-      }))
+      .addCase(getBooks.fulfilled, (state, action) => {
+        console.log(action.payload);
+        const bookList = action.payload;
+        const newBookList = [];
+        Object.keys(bookList).forEach((book) => newBookList.push({
+          item_id: book,
+          title: bookList[book][0].title,
+          author: bookList[book][0].author,
+        }));
+        return {
+          ...state,
+          isLoading: false,
+          bookItems: newBookList,
+        };
+      })
       .addCase(getBooks.rejected, (state) => ({
         ...state,
         isLoading: false,
