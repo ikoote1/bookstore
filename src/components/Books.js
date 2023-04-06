@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { BiLoaderAlt } from 'react-icons/bi';
 import { removeBook, getBooks, deleteBook } from '../redux/books/booksSlice';
 import AddBook from './AddBook';
 
@@ -28,18 +29,13 @@ const Books = () => {
             (book) => (
               <div className="book" key={book.item_id}>
                 <div>
-                  <h2>{book.title}</h2>
-                  <h2>
-                    {' '}
-                    by
-                    {' '}
-                  </h2>
-                  <h2>
-                    {book.author}
-                  </h2>
+                  <h2>Action</h2>
+                  <h1>{book.title}</h1>
+                  <h3>{book.author}</h3>
+                  <div></div>
                 </div>
                 <button type="button" onClick={() => handelRemove(book.item_id)}>Delete</button>
-                <div className="Oval-2" />
+                <span><BiLoaderAlt className="blue" /></span>
               </div>
             ),
           )}

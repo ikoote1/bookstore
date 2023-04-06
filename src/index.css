@@ -44,6 +44,10 @@
   font-weight: 600;
 }
 
+.profile{
+  color: blue;
+}
+
 /* books styling */
 
 .chart {
@@ -84,10 +88,8 @@
   gap: 30px;
 }
 
-.Oval-2 {
-  width: 4.25rem;
-  height: 4.25rem;
-  border: solid 5px #e8e8e8;
+.blue{
+  color: blue;
 }
 
 form > button {
