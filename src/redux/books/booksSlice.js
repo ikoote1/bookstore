@@ -69,9 +69,14 @@ const booksSlice = createSlice({
         ...state,
         isLoading: false,
         error: 'State Error',
-      }));
+      }))
       .addCase(postBook.pending, (state) => ({
         ...state,
+        isBookAdded: false,
+      }))
+      .addCase(postBook.fulfilled, (state, action) => ({
+        ...state,
+        isBookAdded: true,
       }))
   },
 });
