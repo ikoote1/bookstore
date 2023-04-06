@@ -44,7 +44,20 @@
   font-weight: 600;
 }
 
+.navbar>span{
+  width: 40px;
+  height: 40px;
+  position: relative;
+  left: 99%;
+  margin-top: 40px;
+  border-radius: 50%;
+  border: 1.5px solid #888;
+}
+
 .profile {
+  position: relative;
+  left: 12px;
+  top: 12px;
   color: blue;
 }
 
@@ -76,8 +89,6 @@
   background-color: #ffffff;
   margin-bottom: 20px;
   padding-left: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
   display: flex;
   flex-direction: row;
   gap: 10%;
@@ -85,66 +96,48 @@
 
 .first{
   width: 52%;
-  border-right: 4px solid black;
 }
 
 .first>h2{
-    width: 3.063rem;
     height: 1.125rem;
-    margin: 0 2.438rem 0 0;
     opacity: 0.5;
     font-family: Montserrat;
-    font-size: 0.875rem;
+    font-size: 1.075rem;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
+    margin-top: 30px;
     color: #121212;
 }
 
 .Title {
-  width: 12.313rem;
   height: 1.813rem;
-  margin: 0.188rem 20.188rem 0 0;
   font-family: RobotoSlab;
-  font-size: 1.375rem;
+  font-size: 1.875rem;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: -0.2px;
+  letter-spacing: 0.2px;
+  margin-top: -10px;
   color: #121212;
 }
 
 .Suzanne-Collins {
-  width: 6.688rem;
   height: 1.188rem;
-  margin: 0.25rem 0 0;
   font-family: RobotoSlab;
-  font-size: 0.875rem;
+  font-size: 1.075rem;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
+  margin-top: -9px;
   color: #4386bf;
 }
 
 .btn>button {
   width: 4.563rem;
   height: 1.188rem;
-  margin: 0.188rem 0.938rem 0.125rem 0;
   font-family: RobotoSlab;
   font-size: 0.875rem;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #4386bf;
+  margin-left: -9px;
   background-color: #ffffff;
   border-color: #ffffff;
+  border: #ffffff;
 }
 
 .end{
@@ -175,10 +168,51 @@
   color: #9c9c9c;
   margin-top: -1px;
 }
+
 .blue {
   width: 100px;
   height: 100px;
   color: blue;
+}
+
+.update{
+  border-left: 2px solid #cfcdcd;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.update>h3{
+  width: 7.875rem;
+  height: 1.125rem;
+  margin: 0.063rem 5.375rem 0 3.688rem;
+  opacity: 0.5;
+  font-family: RobotoSlab;
+  font-size: 0.813rem;
+  /* margin-top: 30px; */
+  font-weight: 300;
+  color: #121212;
+}
+
+.update>h2{
+  width: 4.688rem;
+  height: 1.313rem;
+  font-family: RobotoSlab;
+  margin: 0.438rem 6.813rem 0.25rem 3.688rem;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: -0.4px;
+  color: #121212;
+}
+
+.update>button{
+  width: 11.5rem;
+  height: 2.063rem;
+  margin: 0.75rem 0 0.563rem 3.688rem;
+  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+  border-radius: 3px;
+  background-color: #0290ff;
+  border: #ffffff;
+  border-color: #ffffff;
 }
 
 form > button {

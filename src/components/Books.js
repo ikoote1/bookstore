@@ -46,7 +46,7 @@ const Books = () => {
                       <h3>completed</h3>
                     </div>
                   </div>
-                  <div className='update'>
+                  <div className="update">
                     <h3>CURRENT CHAPTER</h3>
                     <h2>Introduction</h2>
                     <button type="button">UPDATE PROGRESS</button>
