@@ -4,21 +4,31 @@ import axios from 'axios';
 const BOOKSTOREID = 'WkLflBe9JDNDC1w9GY1R';
 const url = `https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/${BOOKSTOREID}/books`;
 
-const initialState = {
-  bookItems: [],
-  isLoading: true,
-};
-
 export const getBooks = createAsyncThunk('book/getBooks',
   async () => {
     try {
       const resp = await axios.get(url);
-      // console.log(resp.data);
       return resp.data;
     } catch (error) {
       return error;
     }
   });
+
+export const postBook = createAsyncThunk('book/postBook',
+  async () => {
+    try {
+      const resp = await axios.post(url);
+      return resp.data;
+    } catch (error) {
+      return error
+    }
+  })
+
+  const initialState = {
+    bookItems: [],
+    isLoading: true,
+    isBookAdded: true,
+  };
 
 const booksSlice = createSlice({
   name: 'book',
@@ -60,6 +70,9 @@ const booksSlice = createSlice({
         isLoading: false,
         error: 'State Error',
       }));
+      .addCase(postBook.pending, (state) => ({
+        ...state,
+      }))
   },
 });
 
