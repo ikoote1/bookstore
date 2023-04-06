@@ -17,18 +17,18 @@ export const getBooks = createAsyncThunk('book/getBooks',
 export const postBook = createAsyncThunk('book/postBook',
   async (book) => {
     try {
-      const resp = await axios.post(url,book);
+      const resp = await axios.post(url, book);
       return resp.data;
     } catch (error) {
-      return error
+      return error;
     }
-  })
+  });
 
-  const initialState = {
-    bookItems: [],
-    isLoading: true,
-    isBookAdded: true,
-  };
+const initialState = {
+  bookItems: [],
+  isLoading: true,
+  isBookAdded: true,
+};
 
 const booksSlice = createSlice({
   name: 'book',
@@ -77,7 +77,7 @@ const booksSlice = createSlice({
       .addCase(postBook.fulfilled, (state) => ({
         ...state,
         isBookAdded: true,
-      }))
+      }));
   },
 });
 
