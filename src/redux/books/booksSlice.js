@@ -1,4 +1,5 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import axios from 'axios';
 
 const url = '';
 
@@ -8,12 +9,15 @@ const initialState = {
 };
 
 export const getBooks = createAsyncThunk('book/getBooka',
-async () => {
-  try{
-    const resp = await axios(url)
-    return resp.data
-  } catch (error) { }
-})
+  async () => {
+    try {
+      const resp = await axios(url);
+      return resp.data;
+    } catch (error) {
+      console.error(error);
+      return null;
+    }
+  });
 
 const booksSlice = createSlice({
   name: 'book',
@@ -32,17 +36,26 @@ const booksSlice = createSlice({
   extraReducers: (builder) => {
     builder
       .addCase(getBooks.pending, (state) => {
-        state.isLoading = true;
+        return {
+          ...state,
+          isLoading: true,
+        };
       })
       .addCase(getBooks.fulfilled, (state, action) => {
-        state.isLoading = false;
-        state.bookItems = action.payload.results;
+        return {
+          ...state,
+          isLoading: false,
+          bookItems: action.payload.results,
+        };
       })
       .addCase(getBooks.rejected, (state) => {
-        state.isLoading = false;
-        state.error = 'State Error'
-      })
-  }
+        return {
+          ...state,
+          isLoading: false,
+          error: 'State Error'
+        };
+      });
+  },
 });
 
 export const { addBook, removeBook } = booksSlice.actions;
