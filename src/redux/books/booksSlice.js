@@ -63,7 +63,6 @@ const booksSlice = createSlice({
         isLoading: true,
       }))
       .addCase(getBooks.fulfilled, (state, action) => {
-        console.log(action.payload);
         const bookList = action.payload;
         const newBookList = [];
         Object.keys(bookList).forEach((book) => newBookList.push({

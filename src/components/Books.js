@@ -13,7 +13,7 @@ const Books = () => {
   };
   useEffect(() => {
     dispatch(getBooks());
-  }, []);
+  }, [dispatch]);
 
   if (isLoading || !bookItems) {
     return (
