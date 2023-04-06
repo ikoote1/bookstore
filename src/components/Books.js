@@ -28,21 +28,28 @@ const Books = () => {
           {bookItems.map(
             (book) => (
               <div className="book" key={book.item_id}>
-                <div>
-                  <h2>Action</h2>
-                  <h1>{book.title}</h1>
-                  <h3>{book.author}</h3>
-                  <div>
+                <div className="first">
+                  <h2 className="School-of Text-Style-5">Action</h2>
+                  <h1 className="Title Text-Style-6">{book.title}</h1>
+                  <h3 className="Suzanne-Collins Text-Style-8">{book.author}</h3>
+                  <div className="btn">
                     <button type="button">Comment</button>
-                  <button type="button" onClick={() => handelRemove(book.item_id)}>Delete</button>
-                  <button type="button">Edit</button>
+                    <button type="button" onClick={() => handelRemove(book.item_id)}>Delete</button>
+                    <button type="button">Edit</button>
                   </div>
                 </div>
                 <div className="end">
-                  <div>
-                  <span><BiLoaderAlt className="blue" /></span>
-                  <span>0%</span>
-                  <h3>completed</h3>
+                  <div className="span">
+                    <span><BiLoaderAlt className="blue" /></span>
+                    <div>
+                      <span>0%</span>
+                      <h3>completed</h3>
+                    </div>
+                  </div>
+                  <div className='update'>
+                    <h3>CURRENT CHAPTER</h3>
+                    <h2>Introduction</h2>
+                    <button type="button">UPDATE PROGRESS</button>
                   </div>
                 </div>
               </div>
