@@ -1,5 +1,4 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-// import bookItems from '../bookItems';
 
 const url = '';
 
@@ -9,8 +8,11 @@ const initialState = {
 };
 
 export const getBooks = createAsyncThunk('book/getBooka',
-() => {
-  ret
+async () => {
+  try{
+    const resp = await axios(url)
+    return resp.data
+  } catch (error) { }
 })
 
 const booksSlice = createSlice({

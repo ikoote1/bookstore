@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { useEffect } from 'react';
 import { removeBook, getBooks } from '../redux/books/booksSlice';
 import AddBook from './AddBook';
 
@@ -10,12 +9,12 @@ const Books = () => {
 
   useEffect(() => {
     dispatch(getBooks());
-  },[]);
+  }, []);
 
-  if(isLoading){
-    return(
+  if (isLoading) {
+    return (
       <div><h1>Loading..........</h1></div>
-    )
+    );
   }
   return (
     <div>
