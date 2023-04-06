@@ -15,9 +15,9 @@ export const getBooks = createAsyncThunk('book/getBooks',
   });
 
 export const postBook = createAsyncThunk('book/postBook',
-  async () => {
+  async (book) => {
     try {
-      const resp = await axios.post(url);
+      const resp = await axios.post(url,book);
       return resp.data;
     } catch (error) {
       return error
@@ -74,7 +74,7 @@ const booksSlice = createSlice({
         ...state,
         isBookAdded: false,
       }))
-      .addCase(postBook.fulfilled, (state, action) => ({
+      .addCase(postBook.fulfilled, (state) => ({
         ...state,
         isBookAdded: true,
       }))
