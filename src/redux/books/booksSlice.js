@@ -24,10 +24,20 @@ export const postBook = createAsyncThunk('book/postBook',
     }
   });
 
+  export const deleteBook = createAsyncThunk('books/deleteBook', async (bookId) => {
+    try {
+      const response = await axios.delete(`${url}/${bookId}`);
+      return response.data;
+    } catch (error) {
+      return error;
+    }
+  });
+
 const initialState = {
   bookItems: [],
   isLoading: true,
   isBookAdded: true,
+  idBookDeleted: true,
 };
 
 const booksSlice = createSlice({
@@ -77,6 +87,14 @@ const booksSlice = createSlice({
       .addCase(postBook.fulfilled, (state) => ({
         ...state,
         isBookAdded: true,
+      }))
+      .addCase(deleteBook.pending, (state) => ({
+        ...state,
+        idBookDeleted: false,
+      }))
+      .addCase(deleteBook.fulfilled, (state) => ({
+        ...state,
+        idBookDeleted: true,
       }));
   },
 });
