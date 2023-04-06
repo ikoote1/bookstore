@@ -38,7 +38,13 @@ const Books = () => {
                   <button type="button">Edit</button>
                   </div>
                 </div>
-                <span><BiLoaderAlt className="blue" /></span>
+                <div className="end">
+                  <div>
+                  <span><BiLoaderAlt className="blue" /></span>
+                  <span>0%</span>
+                  <h3>completed</h3>
+                  </div>
+                </div>
               </div>
             ),
           )}
