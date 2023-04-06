@@ -32,9 +32,12 @@ const Books = () => {
                   <h2>Action</h2>
                   <h1>{book.title}</h1>
                   <h3>{book.author}</h3>
-                  <div></div>
+                  <div>
+                    <button type="button">Comment</button>
+                  <button type="button" onClick={() => handelRemove(book.item_id)}>Delete</button>
+                  <button type="button">Edit</button>
+                  </div>
                 </div>
-                <button type="button" onClick={() => handelRemove(book.item_id)}>Delete</button>
                 <span><BiLoaderAlt className="blue" /></span>
               </div>
             ),
