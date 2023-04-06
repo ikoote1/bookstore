@@ -1,12 +1,16 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { removeBook, getBooks } from '../redux/books/booksSlice';
+import { removeBook, getBooks, deleteBook } from '../redux/books/booksSlice';
 import AddBook from './AddBook';
 
 const Books = () => {
   const dispatch = useDispatch();
   const { bookItems, isLoading } = useSelector((state) => state.book);
 
+  const handelRemove = (bookId) => {
+    dispatch(deleteBook(bookId))
+      .then(dispatch(removeBook(bookId)));
+  };
   useEffect(() => {
     dispatch(getBooks());
   }, []);
@@ -34,7 +38,7 @@ const Books = () => {
                     {book.author}
                   </h2>
                 </div>
-                <button type="button" onClick={() => { dispatch(removeBook(book.item_id)); }}>Delete</button>
+                <button type="button" onClick={() => handelRemove(book.item_id)}>Delete</button>
               </div>
             ),
           )}

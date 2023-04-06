@@ -24,14 +24,14 @@ export const postBook = createAsyncThunk('book/postBook',
     }
   });
 
-  export const deleteBook = createAsyncThunk('books/deleteBook', async (bookId) => {
-    try {
-      const response = await axios.delete(`${url}/${bookId}`);
-      return response.data;
-    } catch (error) {
-      return error;
-    }
-  });
+export const deleteBook = createAsyncThunk('book/deleteBook', async (bookId) => {
+  try {
+    const response = await axios.delete(`${url}/${bookId}`);
+    return response.data;
+  } catch (error) {
+    return error;
+  }
+});
 
 const initialState = {
   bookItems: [],
@@ -50,8 +50,10 @@ const booksSlice = createSlice({
     },
     removeBook: (state, action) => {
       const bookIdToRemove = action.payload;
-      const filteredBookItems = state.bookItems.filter((book) => book.id !== bookIdToRemove);
-      return { ...state, bookItems: filteredBookItems };
+      return {
+        ...state,
+        bookItems: state.bookItems.filter((book) => book.item_id !== bookIdToRemove),
+      };
     },
   },
   extraReducers: (builder) => {
