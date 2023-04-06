@@ -84,6 +84,12 @@
   gap: 30px;
 }
 
+.Oval-2 {
+  width: 4.25rem;
+  height: 4.25rem;
+  border: solid 5px #e8e8e8;
+}
+
 form > button {
   border-radius: 10px;
   border-color: white;

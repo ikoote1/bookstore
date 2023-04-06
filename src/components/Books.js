@@ -39,6 +39,7 @@ const Books = () => {
                   </h2>
                 </div>
                 <button type="button" onClick={() => handelRemove(book.item_id)}>Delete</button>
+                <div className="Oval-2" />
               </div>
             ),
           )}

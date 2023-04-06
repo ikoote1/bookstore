@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { CgProfile } from 'react-icons/cg';
 
 const Navigation = () => (
   <div className="bar">
@@ -12,6 +13,7 @@ const Navigation = () => (
           <Link style={{ textDecoration: 'none', color: 'black' }} to="categories">CATEGORIES</Link>
         </li>
       </ul>
+      <span><CgProfile className="profile" /></span>
     </nav>
   </div>
 );
