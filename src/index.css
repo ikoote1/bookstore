@@ -19,16 +19,14 @@
   height: 5.938rem;
   display: flex;
   flex-direction: row;
- padding-left: 6.25rem;
- margin: 0 0 2.375rem;
- padding: 1.438rem 6.188rem 1.688rem 6.25rem;
+  margin: 0 0 2.375rem;
+  padding: 1.438rem 6.188rem 1.688rem 6.25rem;
 }
 
 .navbar > h1 {
   width: 40rem;
   height: 2.313rem;
   margin: 0.375rem 2.938rem 0.125rem 0;
-  font-family: Montserrat;
   font-size: 1.875rem;
   color: #0290ff;
 }
@@ -40,22 +38,20 @@
   list-style: none;
 }
 
-#book{
+#book {
   width: 3.688rem;
   height: 1rem;
   margin: 1.125rem 2.563rem 0.688rem 0;
-  font-family: Montserrat;
   font-size: 0.813rem;
   letter-spacing: 1.9px;
   color: #121212;
 }
 
-#categ{
+#categ {
   width: 6.563rem;
   height: 1rem;
   margin: 1.125rem 41.5rem 0.688rem 2.563rem;
   opacity: 0.5;
-  font-family: Montserrat;
   font-size: 0.813rem;
   letter-spacing: 1.9px;
   color: #121212;
@@ -99,7 +95,7 @@
   padding: 2rem 9.188rem 1.625rem 1.688rem;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
-  background-color: #ffffff;
+  background-color: #fff;
   display: flex;
   flex-direction: row;
   gap: 10%;
@@ -141,6 +137,12 @@ form > button {
   width: 13%;
   background-color: rgb(76, 76, 241);
   color: white;
+}
+
+.btn{
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
 }
 
 .btn > button {
@@ -248,22 +250,22 @@ form {
   height: 2.813rem;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
-.nameg{
+.nameg {
   width: 28%;
   height: 2.813rem;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
-.sub{
+.sub {
   width: 19%;
   height: 2.813rem;
   border-radius: 3px;
-  background-color:  #0290ff;
+  background-color: #0290ff;
 }
 
 .check {
