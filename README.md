@@ -9,7 +9,7 @@ The bookstore project is a project which allows the user to add, remove, and edi
 
 </div>
 
-<!-- Awesome Books ES6 -->
+<!-- bookstore -->
 
 # 📗 Table of Contents
 
@@ -18,9 +18,9 @@ The bookstore project is a project which allows the user to add, remove, and edi
 - [📖 bookstore ](#-bookstore-)
   - [🛠 Built With ](#-built-with-)
     - [Git ](#git-)
-    - [Vs code](#vs-code)
+    - [Redux ](#redux-)
     - [React ](#react-)
-    - [Routers](#routers)
+    - [Routers ](#routers-)
     - [CSS ](#css-)
     - [Key Features ](#key-features-)
   - [Video Description of the project  Video will be added soon ](#video-description-of-the-project--video-will-be-added-soon-)
@@ -42,18 +42,19 @@ The bookstore project is a project which allows the user to add, remove, and edi
 <!-- PROJECT DESCRIPTION -->
 
 # 📖 bookstore <a name="about-project"></a>
-- This is the project of a website for adding, storing, deleting and editing books.
 
+- This is the project of a website for adding, storing, deleting books.
 - I built this project to improve my skills in web development.
 - I developed using front end languages and Javascript for user exprience.
 
 ## 🛠 Built With <a name="built-with"></a>
+
 - This project was built using the following materials and languages below;
 
 ### Git <a name="Git"></a>
-### Vs code<a name="Vs code"></a>
+### Redux <a name="Redux"></a>
 ### React <a name="React"></a>
-### Routers<a name="Routers"></a>
+### Routers <a name="Routers"></a>
 ### CSS <a name="CSS"></a> 
 
 <details>
@@ -161,8 +162,8 @@ To run tests, run the following steps:
 
 >In the feature am planning;
 
-- [ ] **To add pdf books**
-- [ ] **To include download button**
+- [ ] **To add book links basing on their titles**
+- [ ] **To include reading link**
 - [ ] **To add backend**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -199,5 +200,5 @@ This project is [MIT](./LICENSE) licensed.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-[]**Awesome-books-ES6** (https://github.com/ikoote1/Awesome-books-ES6/pull/1)
+[]**bookstore** (https://github.com/ikoote1/bookstore/pull/2)
 
