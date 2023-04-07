@@ -34,7 +34,7 @@ const Books = () => {
                   <h3 className="Suzanne-Collins Text-Style-8">{book.author}</h3>
                   <div className="btn">
                     <button type="button">Comment</button>
-                    <button type="button" onClick={() => handelRemove(book.item_id)}>Delete</button>
+                    <button type="button" onClick={() => handelRemove(book.item_id)}>Remove</button>
                     <button type="button">Edit</button>
                   </div>
                 </div>
