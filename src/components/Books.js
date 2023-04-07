@@ -1,30 +1,44 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { removeBook } from '../redux/books/booksSlice';
+import { removeBook, getBooks, deleteBook } from '../redux/books/booksSlice';
 import AddBook from './AddBook';
 
 const Books = () => {
   const dispatch = useDispatch();
-  const { bookItems } = useSelector((state) => state.book);
+  const { bookItems, isLoading } = useSelector((state) => state.book);
+
+  const handelRemove = (bookId) => {
+    dispatch(deleteBook(bookId))
+      .then(dispatch(removeBook(bookId)));
+  };
+  useEffect(() => {
+    dispatch(getBooks());
+  }, [dispatch]);
+
+  if (isLoading || !bookItems) {
+    return (
+      <div><h1>Loading..........</h1></div>
+    );
+  }
   return (
     <div>
       <div>
         <div className="books">
           {bookItems.map(
-            (item) => (
-              <div className="book" key={item.id}>
+            (book) => (
+              <div className="book" key={book.item_id}>
                 <div>
-                  <h2>{item.title}</h2>
+                  <h2>{book.title}</h2>
                   <h2>
                     {' '}
                     by
                     {' '}
                   </h2>
                   <h2>
-                    {item.author}
+                    {book.author}
                   </h2>
                 </div>
-                <button type="button" onClick={() => { dispatch(removeBook(item.id)); }}>Delete</button>
+                <button type="button" onClick={() => handelRemove(book.item_id)}>Delete</button>
               </div>
             ),
           )}
