@@ -84,14 +84,12 @@
 }
 
 .book {
-  /* width: 76rem; */
   height: 10.625rem;
   margin: 2.313rem 6.2rem 0;
   padding: 2rem 9.188rem 1.625rem 1.688rem;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
-  background-color: blue;
-  /* background-color: #fff; */
+  background-color: #fff;
   display: flex;
   flex-direction: row;
   gap: 10%;
