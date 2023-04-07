@@ -74,8 +74,6 @@
   color: #0290ff;
 }
 
-/* books styling */
-
 .chart {
   width: 92%;
   position: relative;
@@ -105,7 +103,6 @@
   display: flex;
   flex-direction: row;
   gap: 10%;
-  /* background-color: green; */
 }
 
 .first {
@@ -230,15 +227,6 @@ form > button {
   border-color: #fff;
 }
 
-/* .book > button {
-  border-radius: 10px;
-  border-color: white;
-  width: 13%;
-  height: 40px;
-  background-color: rgb(76, 76, 241);
-  color: white;
-} */
-
 .form {
   width: 94%;
   position: relative;
@@ -258,24 +246,14 @@ form {
 .named {
   width: 50%;
   height: 2.813rem;
-  /* margin: 1.188rem 2.125rem 0 0;
-  padding: 0.813rem 35.688rem 0.813rem 1.063rem; */
   border-radius: 4px;
   border: solid 1px #e8e8e8;
   background-color: #ffffff;
-  /* height: 40px;
-  width: 42%;
-  border-radius: 10px;
-  border-color: white;
-  padding-left: 8px;
-  outline: none; */
 }
 
 .nameg{
   width: 28%;
   height: 2.813rem;
-  /* margin: 1.188rem 2.125rem 0;
-  padding: 0.375rem 0.938rem 0.563rem 1rem; */
   border-radius: 4px;
   border: solid 1px #e8e8e8;
   background-color: #ffffff;
@@ -284,18 +262,9 @@ form {
 .sub{
   width: 19%;
   height: 2.813rem;
-  /* margin: 1.188rem 0 0 2.125rem;
-  padding: 0.801rem 1.188rem 0.886rem 1.375rem; */
   border-radius: 3px;
   background-color:  #0290ff;
 }
-
-
-/* input:focus-within {
-  border: 2px solid blue;
-} */
-
-/* categoriiess */
 
 .check {
   border-radius: 10px;
