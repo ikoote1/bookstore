@@ -213,7 +213,7 @@ form > button {
 }
 
 .update > button {
-  width: 11.5rem;
+  width: 11.0rem;
   height: 2.063rem;
   margin: 0.75rem 0 0.563rem 3.688rem;
   padding: 0.438rem 1.188rem 0.5rem 1.375rem;
@@ -224,19 +224,21 @@ form > button {
 }
 
 .form {
-  width: 94%;
-  position: relative;
-  left: 7%;
   margin-top: 50px;
   padding-bottom: 16.56rem;
 }
 
 form {
-  width: 94%;
   height: 2.813rem;
+  margin: 0 6.2rem 0;
   display: flex;
   flex-direction: row;
   gap: 1%;
+
+}
+
+.form>h1{
+  margin: 0 0 1rem 6.2rem;
 }
 
 .named {
