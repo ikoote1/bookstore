@@ -17,6 +17,7 @@
 .navbar {
   display: flex;
   flex-direction: row;
+
   /* gap: 5%; */
   padding: 1.438rem 6.188rem 1.688rem 6.25rem;
   background-color: white;
@@ -213,7 +214,7 @@ form > button {
 }
 
 .update > button {
-  width: 11.0rem;
+  width: 11rem;
   height: 2.063rem;
   margin: 0.75rem 0 0.563rem 3.688rem;
   padding: 0.438rem 1.188rem 0.5rem 1.375rem;
@@ -234,10 +235,9 @@ form {
   display: flex;
   flex-direction: row;
   gap: 1%;
-
 }
 
-.form>h1{
+.form > h1 {
   margin: 0 0 1rem 6.2rem;
 }
 
