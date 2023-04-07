@@ -15,16 +15,15 @@
 }
 
 .navbar {
-  width: 50%;
-  height: 5.938rem;
   display: flex;
   flex-direction: row;
-  margin: 0 0 2.375rem;
+  gap: 5%;
   padding: 1.438rem 6.188rem 1.688rem 6.25rem;
+  background-color: white;
 }
 
 .navbar > h1 {
-  width: 40rem;
+  width: 30%;
   height: 2.313rem;
   margin: 0.375rem 2.938rem 0.125rem 0;
   font-size: 1.875rem;
@@ -32,25 +31,23 @@
 }
 
 .navbar > ul {
-  width: 60%;
+  width: 45%;
   display: flex;
   flex-direction: row;
+  height: 1rem;
   list-style: none;
+  gap: 10%;
 }
 
 #book {
-  width: 3.688rem;
-  height: 1rem;
-  margin: 1.125rem 2.563rem 0.688rem 0;
+  width: 40%;
   font-size: 0.813rem;
   letter-spacing: 1.9px;
   color: #121212;
 }
 
 #categ {
-  width: 6.563rem;
-  height: 1rem;
-  margin: 1.125rem 41.5rem 0.688rem 2.563rem;
+  width: 50%;
   opacity: 0.5;
   font-size: 0.813rem;
   letter-spacing: 1.9px;
@@ -59,15 +56,16 @@
 
 .navbar > span {
   width: 2.813rem;
-  height: 1rem;
-  margin: 0 0 0 41.5rem;
-  padding: 0.875rem;
+  height: 2.813rem;
   border: solid 1px #e8e8e8;
   border-radius: 50%;
 }
 
 .profile {
   color: #0290ff;
+  position: relative;
+  left: 30%;
+  top: 30%;
 }
 
 .chart {
@@ -80,12 +78,10 @@
 }
 
 .books {
-  width: 92%;
   height: auto;
   position: relative;
-  left: 3%;
-  border-radius: 10px;
   margin-top: 30px;
+  background-color: blue;
 }
 
 .book {

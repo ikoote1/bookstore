@@ -4,7 +4,7 @@ import { IoIosPerson } from 'react-icons/io';
 const Navigation = () => (
   <div className="bar">
     <nav className="navbar">
-      <h1>Bookstore</h1>
+      <h1>Bookstore CMS</h1>
       <ul>
         <li>
           <Link id="book" style={{ textDecoration: 'none', color: 'black' }} to="/">BOOKS</Link>
