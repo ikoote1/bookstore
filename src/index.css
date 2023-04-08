@@ -3,48 +3,71 @@
   padding: 0;
   box-sizing: border-box;
   height: auto;
-  background-color: #8888;
+  background-color: #fafafa;
 }
 
 .bar {
   width: 100%;
-  height: 100px;
+  height: 5.938rem;
   background-color: white;
   border-radius: 6px;
   border: 1px solid white;
-  box-shadow: 5px 10px 18px 5px #888;
 }
 
 .navbar {
-  width: 50%;
-  height: 100px;
   display: flex;
   flex-direction: row;
-  padding-left: 50px;
+
+  /* gap: 5%; */
+  padding: 1.438rem 6.188rem 1.688rem 6.25rem;
+  background-color: white;
 }
 
 .navbar > h1 {
-  position: relative;
-  top: -10px;
-  font-size: 45px;
-  color: blue;
-  font-weight: 600;
+  width: 20%;
+  height: 2.313rem;
+  margin: 0.375rem 2.938rem 0.125rem 0;
+  font-size: 1.875rem;
+  color: #0290ff;
 }
 
 .navbar > ul {
+  width: 75%;
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  height: 1rem;
   list-style: none;
-  padding-top: 30px;
+  gap: 10%;
 }
 
-.navbar > ul > li {
-  font-size: 22px;
-  font-weight: 600;
+#book {
+  width: 40%;
+  font-size: 0.813rem;
+  letter-spacing: 1.9px;
+  color: #121212;
 }
 
-/* books styling */
+#categ {
+  width: 50%;
+  opacity: 0.5;
+  font-size: 0.813rem;
+  letter-spacing: 1.9px;
+  color: #121212;
+}
+
+.navbar > span {
+  width: 2.813rem;
+  height: 2.813rem;
+  border: solid 1px #e8e8e8;
+  border-radius: 50%;
+}
+
+.profile {
+  color: #0290ff;
+  position: relative;
+  left: 30%;
+  top: 30%;
+}
 
 .chart {
   width: 92%;
@@ -56,32 +79,51 @@
 }
 
 .books {
-  width: 92%;
   height: auto;
   position: relative;
-  left: 3%;
-  border-radius: 10px;
   margin-top: 30px;
 }
 
 .book {
-  width: 100%;
-  height: 100px;
-  margin-bottom: 20px;
-  padding-top: 50px;
-  border-radius: 10px;
-  background-color: white;
-  padding-left: 30px;
+  height: 10.625rem;
+  margin: 2.313rem 6.2rem 0;
+  padding: 2rem 9.188rem 1.625rem 1.688rem;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
   display: flex;
   flex-direction: row;
-  gap: 24%;
+  gap: 10%;
 }
 
-.book > div {
-  width: 60%;
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
+.first {
+  width: 52%;
+}
+
+.first > h2 {
+  height: 1.125rem;
+  opacity: 0.5;
+  font-size: 1.075rem;
+  font-weight: bold;
+  margin-top: 30px;
+  color: #121212;
+}
+
+.Title {
+  height: 1.813rem;
+  font-size: 1.875rem;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  margin-top: -10px;
+  color: #121212;
+}
+
+.Suzanne-Collins {
+  height: 1.188rem;
+  font-size: 1.075rem;
+  font-weight: 300;
+  margin-top: -9px;
+  color: #4386bf;
 }
 
 form > button {
@@ -92,45 +134,135 @@ form > button {
   color: white;
 }
 
-.book > button {
-  border-radius: 10px;
-  border-color: white;
-  width: 13%;
-  height: 40px;
-  background-color: rgb(76, 76, 241);
-  color: white;
+.btn {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.btn > button {
+  width: 4.563rem;
+  height: 1.188rem;
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #4386bf;
+  margin-left: -9px;
+  background-color: #fff;
+  border-color: #fff;
+  border: #fff;
+}
+
+.end {
+  width: 48%;
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+}
+
+.span {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  padding-top: 30px;
+}
+
+.span > div {
+  padding-top: 20px;
+}
+
+.span > div > span {
+  font-size: 2rem;
+  color: #121212;
+  width: 4.25rem;
+}
+
+.update > h3 {
+  width: 7.875rem;
+  height: 1.125rem;
+  margin: 0.063rem 5.375rem 0 3.688rem;
+  opacity: 0.5;
+  font-size: 0.813rem;
+  font-weight: 300;
+  color: #121212;
+}
+
+.span > div > h3 {
+  color: #9c9c9c;
+  margin-top: -1px;
+}
+
+.blue {
+  width: 100px;
+  height: 100px;
+  color: #379cf6;
+}
+
+.update {
+  border-left: 2px solid #cfcdcd;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.update > h2 {
+  width: 4.688rem;
+  height: 1.313rem;
+  margin: 0.438rem 6.813rem 0.25rem 3.688rem;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: -0.4px;
+  color: #121212;
+}
+
+.update > button {
+  width: 11rem;
+  height: 2.063rem;
+  margin: 0.75rem 0 0.563rem 3.688rem;
+  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+  border-radius: 3px;
+  background-color: #0290ff;
+  border: #fff;
+  border-color: #fff;
 }
 
 .form {
-  width: 94%;
-  position: relative;
-  left: 3%;
   margin-top: 50px;
-  padding-bottom: 100px;
+  padding-bottom: 16.56rem;
 }
 
 form {
-  width: 100%;
-  height: auto;
+  height: 2.813rem;
+  margin: 0 6.2rem 0;
   display: flex;
   flex-direction: row;
-  gap: 2%;
+  gap: 1%;
 }
 
-input {
-  height: 40px;
-  width: 42%;
-  border-radius: 10px;
-  border-color: white;
-  padding-left: 8px;
-  outline: none;
+.form > h1 {
+  margin: 0 0 1rem 6.2rem;
 }
 
-input:focus-within {
-  border: 2px solid blue;
+.named {
+  width: 50%;
+  height: 2.813rem;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
 }
 
-/* categoriies */
+.nameg {
+  width: 28%;
+  height: 2.813rem;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+}
+
+.sub {
+  width: 19%;
+  height: 2.813rem;
+  border-radius: 3px;
+  background-color: #0290ff;
+}
 
 .check {
   border-radius: 10px;

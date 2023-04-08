@@ -31,16 +31,18 @@ const AddBook = () => {
       <h1>ADD NEW BOOK</h1>
       <form onSubmit={handleSubmit}>
         <input
+          className="named"
           placeholder="Book name.."
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
         <input
+          className="nameg"
           placeholder="Name of the author.."
           value={author}
           onChange={(e) => setAuthor(e.target.value)}
         />
-        <button type="submit">Add Book</button>
+        <button className="sub" type="submit">Add Book</button>
       </form>
     </div>
   );
